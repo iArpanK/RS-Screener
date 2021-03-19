@@ -1,0 +1,44 @@
+// Relative Strength new 52w high by @iArpanK
+// Stocks making new 52 week high in RS (Blue Label)
+// Stocks making new 52 week high in RS before price (Green Label)
+// v1.0
+
+// Find me on twitter @iArpanK
+// Check out my TradingView RS indicator at https://in.tradingview.com/script/G6MOxSG2-Relative-Strength-Line-by-iArpanK/
+
+// Input parameters
+index = ParamStr("Base Symbol", "NSENIFTY");
+period = Param("New High Period", 250, 1, 1000);
+
+// Calculating RS
+index_price = Foreign(index, "Close");
+RS = Close / index_price;
+
+// Conditions
+RS_high = HHV(Ref(RS, -1), period);
+c1 = RS > RS_high;
+
+stk_high = HHV(Ref(High, -1), period);
+c2 = High <= stk_high;
+
+// Array to store RS Labels
+RS_label = WriteIf(c1 AND c2, "RS New High before Price", "RS New High");
+
+// RS Score (Additional Momentum Parameter IBD Style)
+rs_score_3m = 0.4*((C - Ref(C,-63))/Ref(C,-63));
+rs_score_6m = 0.2*((C - Ref(C,-126))/Ref(C,-126));
+rs_score_9m = 0.2*((C - Ref(C,-189))/Ref(C,-189));
+rs_score_12m = 0.2*((C - Ref(C,-250))/Ref(C,-250));
+
+rs_score = (rs_score_3m + rs_score_6m + rs_score_9m + rs_score_12m) * 100;
+
+// Filter & Columns
+Filter = c1 AND Volume >= 10000 AND Close >= 10;
+
+AddColumn(Close, "Close", 1.2);
+AddColumn(Volume, "Volume", 1.0);
+AddTextColumn(RS_label, "RS Label", format = 1.2, fgcolor = IIf(c1 AND c2, colorBlack, colorWhite), bkcolor = IIf(c1 AND c2, colorBrightGreen, colorBlue), width = 190);
+AddColumn(rs_score, "RS Score", 1, colorDefault, IIf(rs_score >= 100, colorGold, IIf(rs_score >= 80, colorOrange, colorLightBlue)), width = 120);
+
+// Sorting filtered results by 1) RS Score & 2) Symbol
+if( Status( "Action" ) == actionExplore ) SetSortColumns(-6, 1);
