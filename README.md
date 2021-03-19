@@ -4,6 +4,8 @@ Screens for stocks that made new highs in **Relative Strength (RS)** and sorts t
 
 [Download directly from Google Drive](https://drive.google.com/drive/folders/1NHfHHqBLndK2Hy5UvIOQrRMZBqiJvCJC?usp=sharing)
 
+![image](https://user-images.githubusercontent.com/80940234/111784229-2b46a000-88e1-11eb-92f9-cccefef79d92.png)
+
 ### Features
 
 - RS New High (Blue Label)
