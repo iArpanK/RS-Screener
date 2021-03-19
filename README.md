@@ -2,7 +2,7 @@
 Screens for stocks that made new highs in **Relative Strength (RS)** and sorts the results according to their **RS Score**.
 >RS is an indicator popularized by Investor's Business Daily (IBD) and available on their MarketSmith platform. They have a screen called the **Blue Dot** list in their Premium subscription, which screens for stocks making a new high in RS. This screener achieves the same and also ranks the results according to their RS Score which uses the same formula as the **RS Rating**.
 
-[!RS Screener by @iArpanK](Assets/RS Screener.png "RS Screener")
+![]({{site.baseurl}}/https://github.com/iArpanK/RS-Screener/blob/master/Assets/RS%20Screener.PNG)
 
 ### Features
 
