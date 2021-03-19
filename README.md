@@ -2,6 +2,8 @@
 Screens for stocks that made new highs in **Relative Strength (RS)** and sorts the results according to their **RS Score**.
 >RS is an indicator popularized by Investor's Business Daily (IBD) and available on their MarketSmith platform. They have a screen called the **Blue Dot** list in their Premium subscription, which screens for stocks making a new high in RS. This screener achieves the same and also ranks the results according to their RS Score which uses the same formula as the **RS Rating**.
 
+[!RS Screener by @iArpanK](Assets/RS Screener.png "RS Screener")
+
 ### Features
 
 - RS New High (Blue Label)
@@ -24,11 +26,10 @@ Giving 40% weightage on the last quarter's performance and 20% on the other thre
 
 RS Screener requires [Amibroker](https://www.amibroker.com/) to run.
 
-- Download the AFL code [ RS Screener by @iArpanK.afl](https://drive.google.com/drive/folders/1NHfHHqBLndK2Hy5UvIOQrRMZBqiJvCJC?usp=sharing)
--- Open the code in a new Analysis window
--- Configure the input parameters, if required
--- Select date range to scan for
--- Click the Explore button
+- Download the .zip file
+- Extract it
+- Folder contains the AFL file, RS Screener by @iArpanK.afl
+- Use it in your analysis
 
 ### Filters Used
 
