@@ -1,4 +1,5 @@
-remote_theme: "mmistakes/minimal-mistakes"
+theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes
 show_downloads: true
 logo: ![image](https://user-images.githubusercontent.com/80940234/111784229-2b46a000-88e1-11eb-92f9-cccefef79d92.png)
 
