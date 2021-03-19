@@ -1,3 +1,8 @@
 theme: jekyll-theme-cayman
 name: RS Screener by @iArpanK
 show_downloads: true
+
+social-network-links:
+  email: "k.arpan@outlook.com"
+  github: iArpanK
+  twitter: iArpanK
