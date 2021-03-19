@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
 show_downloads: true
-logo: /Assets/logo.png
+logo: blob/master/Assets/logo.PNG
 
 social-network-links:
   email: "k.arpan@outlook.com"
