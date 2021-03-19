@@ -1,4 +1,5 @@
-theme: jekyll-theme-minimal
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: dark
 show_downloads: true
 
 social-network-links:
